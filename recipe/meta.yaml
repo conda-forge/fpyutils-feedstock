@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.2" %}
 
 package:
   name: fpyutils
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/fpyutils/fpyutils-{{ version }}.tar.gz
-  sha256: ecf9314733324a82d13ab9941c3fc2f4897d27066e1ba00bfca27d66f43cc5b7
+  sha256: e6d19c7e2066a961167397883b2e6b3eb127c4cdcbc7937eb3464fd365568299
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: GPL-3.0
   license_family: GPL3
   license_file: LICENSE.txt
-  summary: 'A collection of useful non-standard Python functions which aim to be simple to use, highly readable but not efficient'
+  summary: A collection of useful non-standard Python functions which aim to be simple to use, highly readable but not efficient
 
 extra:
   recipe-maintainers:
