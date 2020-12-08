@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: fpyutils
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/fpyutils/fpyutils-{{ version }}.tar.gz
-  sha256: 8067c9558a500d8f2cff3f3dea6546d0cd403c99558cff87b3660878737a7a8e
+  sha256: 7d17cfdaccae0ed53a2fb3f5ca966b0c060e3a698d7baffd8c1e9d254c529652
 
 build:
   number: 0
@@ -19,9 +19,9 @@ requirements:
     - pip
   run:
     - python >=3
-    - atomicwrites ==1.4.0
-    - pyyaml ==5.3.1
-    - requests ==2.24.0
+    - atomicwrites >=1.4,<1.5
+    - pyyaml >=5.3,<5.4
+    - requests >=2.25,<2.26
 
 test:
   imports:
