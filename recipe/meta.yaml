@@ -20,8 +20,7 @@ requirements:
   run:
     - python >=3.6
     - atomicwrites >=1.4,<1.5
-    - pyyaml >=5.4,<5.5
-    - requests >=2.25,<2.26
+    - requests >=2.26,<2.27
 
 test:
   imports:
