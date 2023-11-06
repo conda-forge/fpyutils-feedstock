@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: fpyutils
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/fpyutils/fpyutils-{{ version }}.tar.gz
-  sha256: d98828d925075d7a2386dd03ed0895e6631c31e00513509e30aa85aa0150cc11
+  sha256: 8a5f0a6d99d23f1577671b8431f272702aa083eddb4e4fb76c3315fac268d92b
 
 build:
   number: 0
