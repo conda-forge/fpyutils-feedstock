@@ -1,26 +1,26 @@
+{% set name = "fpyutils" %}
 {% set version = "4.0.0" %}
 
 package:
-  name: fpyutils
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/fpyutils/fpyutils-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fpyutils-{{ version }}.tar.gz
   sha256: 8a5f0a6d99d23f1577671b8431f272702aa083eddb4e4fb76c3315fac268d92b
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8,<4.0
+    - setuptools >=39.2.0
     - pip
   run:
-    - python >=3.6
-    - atomicwrites >=1.4,<1.5
-    - requests >=2.26,<2.27
+    - python >=3.8,<4.0
 
 test:
   imports:
