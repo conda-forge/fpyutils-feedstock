@@ -1,11 +1,11 @@
-About fpyutils
-==============
+About fpyutils-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpyutils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/frnmst/fpyutils
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpyutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of useful non-standard Python functions which aim to be simple to use, highly readable but not efficient
 
